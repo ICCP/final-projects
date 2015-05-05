@@ -1,0 +1,15 @@
+FC	= ifort
+FFLAGS	= -cm -w -02
+LIBS	= 
+
+COMPILE = $(FC) $(FFLAGS)
+LINK	= $(FC) $(LDFLAGS)
+
+TARGET	= chigrid
+OBJS	= chigrid.o writeinput.o chicalc.o
+
+$(TARGET): $(OBJS)
+	$(LINK) -o $@ $^ $(LIBS)
+	
+%.o:%.f90
+	$(COMPILE) -c $<
