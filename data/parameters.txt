@@ -1,0 +1,14 @@
+-----RK4-----
+AU: 1.49598e+11
+G: 6.67385e-11
+SolarMass: 1.98855e+30
+dt: 10000
+maxT: 1.187e+09
+integration_method: 4
+print_freq: 1
+
+Boundary Distance Squared: 4.81056e+26
+runMode: 4
+mutateChance: 0.2
+satsPerCore: 0
+maxGenerations: 1
