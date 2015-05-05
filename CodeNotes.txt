@@ -1,0 +1,7 @@
+Notes for fitting code:
+
+The source code is broken up into two files.  
+
+The folder Fitting Code contains the minimization routine and all of the subroutines therein.  The text files contain necessary information for the code to run.  fittingparm.txt gives the parameters that you wanted fitted - zeros indicate the parameter is not fit.  initialparm.txt is where you input your starting potentials.  xexp.txt has the experimental data, and limits.txt contains the parameter bounds.  
+
+Parameter Space Code contains the the code to construct the chi square contour plots.  makefile_grid will compile chigrid which outputs a file with a grid of parameters.  makefile_chi compiles an executable to calculate the chi square value at each point on this grid.  This grid is then run through parse.pl to create individual files for each 2d contour plot.  Contour plots are created with contourplots.py.
